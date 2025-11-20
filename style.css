@@ -46,6 +46,7 @@
   }
   
   .pet-image {
+    position: relative;
     height:250px;
   }
   
@@ -54,10 +55,23 @@
   }
   
   .pet-image-container {
+    position: relative;
     float:left;
     padding:10px;
   }
   
+  #pet-comment {
+    margin-top: 12px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background: #eef6ff;
+    color: red;
+    font-weight: 600;
+    display: none;
+    max-width: 360px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0,0.4);
+  }
+
   .dashboard {
     float:left;
     padding:20px;
