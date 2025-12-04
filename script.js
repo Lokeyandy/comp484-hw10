@@ -37,17 +37,17 @@ function clickedTreatButton() {
   pet_info.energy = clamp(pet_info.energy - 1, 0, 10);
 
   wigglePet();
-  comment('Yum! Treats make me happy! 🍪');
+  comment('Yum! Treats make me happy! ');
   checkAndUpdatePetInfoInHtml();
 }
 
 function clickedPlayButton() {
   pet_info.happiness += 3;
-  pet_info.weight -= 1;
+  pet_info.weight = pet_info.weight - 1;
   pet_info.energy = clamp(pet_info.energy - 2, 0, 10);
 
   hopPet();
-  comment('Play time! Throw the ball! 🎾');
+  comment('Play time! Throw the ball! ');
   checkAndUpdatePetInfoInHtml();
 }
 
@@ -57,7 +57,7 @@ function clickedExerciseButton() {
   pet_info.energy = clamp(pet_info.energy - 3, 0, 10);
 
   runPet();
-  comment('Phew… cardio is ruff! 🏃‍♂️🐶');
+  comment('Phew… cardio is ruff! ');
   checkAndUpdatePetInfoInHtml();
 }
 
@@ -66,7 +66,7 @@ function clickedBarkButton() {
   pet_info.energy = clamp(pet_info.energy - 1, 0, 10);
 
   barkPet();
-  comment('WOOF! 🗣️');
+  comment('WOOF! ');
   checkAndUpdatePetInfoInHtml();
 }
 
@@ -76,7 +76,7 @@ function clickedNapButton() {
   pet_info.energy = clamp(pet_info.energy + 4, 0, 10);
 
   snoozePet();
-  comment('Zzz… best nap ever. 😴');
+  comment('Zzz… best nap ever. ');
   checkAndUpdatePetInfoInHtml();
 }
 
